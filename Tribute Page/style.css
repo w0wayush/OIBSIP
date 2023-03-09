@@ -1,76 +1,139 @@
-*{
-  margin: 10;
-  padding: 10;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  border: solid 6px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, rgb(241, 90, 37),rgb(251, 202, 35));
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   line-height: 1.5;
+  color: #333;
 }
 
-.info{
-  text-align: justify;
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-#main {
-  background-color: #fdfbfb;
-  padding: lrem;
+a {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.2s ease-in-out;
 }
 
-#title {
+a:hover {
+  color: #004466;
+}
+
+h1 {
+  font-size: 2rem;
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: rgb(245, 96, 4l);
+  margin-bottom: 20px;
 }
 
 .lead {
+  font-size: 1.2rem;
   text-align: center;
-  font-size: 1.lrem;
+  margin-bottom: 40px;
 }
 
-#img-div>img{
-  width: 100%;
+ul {
+  list-style: none;
 }
 
-#img-div{
-  max-width: 1000px;
-  margin: 2rem auto;
+img {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#title {
+  font-size: 3rem;
+  color: #000;
+  text-shadow: 2px 2px 0px rgb(241, 128, 36);
+}
+
+#img-div {
+  position: relative;
 }
 
 #image-caption {
-  font-size: 1rem;
   text-align: center;
-  margin-bottom: 2rem;
-}
-  
-#image-info {
-  max-width: 700px;
-  margin: auto;
-  padding: 0 1rem;
-}
-  
-#image-info>h2 {
-  text-align: center;
-  margin: 2rem auto;
-}
-  
-#image-info ul li {
-  margin: 1.1rem 0;
+  font-size: 1.2rem;
+  color: #000;
 }
 
-#image-info ul {
-  margin: 2.5rem 0;
+#image-info {
+  margin-top: 40px;
+}
+
+#image-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#image-info li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.info {
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .small-p {
-  margin-top: 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
-#creator {  
-  text-align: center;
-  overflow: hidden;
+small-p em {
+  font-style: italic;
+  color: #666;
 }
 
+#creator {
+  font-size: 1rem;
+  text-align: right;
+  margin-top: 40px;
+}
+
+#creator a {
+  font-weight: bold;
+  color: #cc0000;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  #img-div {
+    margin-bottom: 20px;
+  }
+  #image-caption {
+    font-size: 1.2rem;
+  }
+  #image-info h3 {
+    font-size: 1.5rem;
+  }
+  #image-info li {
+    font-size: 1rem;
+  }
+  .info {
+    font-size: 1rem;
+  }
+  .small-p {
+    font-size: 1rem;
+  }
+  #creator {
+    font-size: 1rem;
+  }
+}
