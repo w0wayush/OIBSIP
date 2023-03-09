@@ -1,24 +1,24 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  background: #1a1a1a;
+body {
+  background-color: #1a1a1a;
   color: #fff;
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-.container{
+.container {
   position: relative;
   max-width: 800px;
-  padding: 10px;
   margin: 50px auto;
+  padding: 10px;
 }
 
 header {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f5ba13;
   text-align: center;
   margin-bottom: 30px;
@@ -26,26 +26,26 @@ header {
   padding: 10px;
 }
 
-.addTask{
+.addTask {
   width: 100%;
   display: flex;
   padding: 10px 0;
 }
 
-.addTask > input[type="text"]{
+.addTask > input[type="text"] {
   width: 90%;
-  color: rgb(255, 255, 255);
+  color: #fff;
   border: none;
-  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid #fff;
   background: none;
   padding: 10px;
   font-size: 22px;
   outline: none;
 }
 
-.addTask button{
+.addTask button {
   margin: 0 10px;
-  background: #222;
+  background-color: #222;
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
@@ -56,39 +56,40 @@ header {
   cursor: pointer;
 }
 
-.notCompleted, .Completed{
+.notCompleted,
+.Completed {
   margin: 5px 0;
   padding: 20px;
 }
 
-h3{
+h3 {
   font-size: 28px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
 
-ol{
+ol {
   list-style: none;
   counter-reset: my-counter;
 }
 
-ol li{
+ol li {
   width: 100%;
   padding: 18px;
   margin: 5px 0;
-  background: #e25656bb;
+  background-color: #e25656bb;
   font-size: 22px;
   counter-increment: my-counter;
 }
 
-ol.Completed li{
+ol.Completed li {
   background-color: #16cb5b;
 }
 
-ol li::before{
+ol li::before {
   content: counter(my-counter);
-  background: #000000;
+  background-color: #000;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -99,16 +100,20 @@ ol li::before{
   margin-right: 0.5rem;
 }
 
-li button{
+li button {
   float: right;
   padding: 5px;
   font-size: 28px;
   line-height: 28px;
-  margin-right: 15px;
-  background: none;
   border: none;
-  outline: none;
+  background-color: transparent;
+  color: #000;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+li button:hover {
+  transform: scale(1.2);
 }
 
 .create {
@@ -181,6 +186,3 @@ li button{
   margin-right: 0.3rem;
   }
 }
-  
-  
-
